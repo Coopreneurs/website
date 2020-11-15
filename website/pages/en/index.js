@@ -62,7 +62,7 @@ class HomeSplash extends React.Component {
         <div className="inner">
           <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
           <PromoSection>
-            <Button href={docUrl('manifest.html')}>Read the manifesto</Button>
+            <Button href="#howItWorks">Learn how it works</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -241,7 +241,6 @@ class Index extends React.Component {
           <h2>Do you need help?</h2>
           <p>Are you looking for a Front End developer? <strong> We have them!</strong></p>
           <p>Are you looking for someone who can build a great landing page? <strong>We too!</strong></p>
-          <p>Do you need a workshop master? <strong>We don't have one!</strong></p>
         </div>
       );
     };

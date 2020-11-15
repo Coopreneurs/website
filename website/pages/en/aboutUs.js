@@ -132,7 +132,7 @@ class Index extends React.Component {
           {
             content: "Shai loves design, ideas and new ways of design thinking. Problem solving and detailed focus are key to building products that customers love.",
             title: 'Shai Schiff',
-            image: "/img/shai.png"
+            image: "/img/shai.jpg"
           },
           {
             content: "Sven is a software developer, accessibility-evangelist and team leader. Powered by VS Code and earl-grey he solves all/some/one of our problems and builds beautiful simple things.",

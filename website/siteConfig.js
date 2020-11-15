@@ -12,7 +12,7 @@
 
 const siteConfig = {
   title: 'Coopreneurs', // Title for your website.
-  tagline: 'We build and own ventures, ❤️ together.🤝 🙌🏽',
+  tagline: 'We build and own ventures, together.',
   url: 'https://Packebusch.github.io', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -29,7 +29,7 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {href: "/#howItWorks", label: "How it works"},
-    {href: "/aboutus", label: "About us"},
+    {href: "/aboutUs", label: "About us"},
     {doc: 'manifest', label: 'Manifesto'},
     {blog: true, label: 'Blog'},
   ],
