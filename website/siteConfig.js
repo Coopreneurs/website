@@ -13,7 +13,7 @@
 const siteConfig = {
   title: 'Coopreneurs', // Title for your website.
   tagline: 'We build and own ventures, together.',
-  url: 'https://Packebusch.github.io', // Your website URL
+  url: 'https://coopreneurs.com', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
