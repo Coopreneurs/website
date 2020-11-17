@@ -21,10 +21,6 @@ button, a.button {
 .imageAlignTop .blockImage{
   max-width:200px!important;
 }
-.smallH2 h2 {
-  font-size: 1.2rem;
-}
-
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
   input {
     padding: .375rem .75rem;
