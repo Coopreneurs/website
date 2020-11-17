@@ -8,4 +8,4 @@ build: ## build static files
 	npm build
 
 release: ## release to github pages
-	GIT_USER=Packebusch CURRENT_BRANCH=master npm run publish-gh-pages
+	USE_SSH=true ORGANIZATION_NAME=Coopreneurs CURRENT_BRANCH=master npm run publish-gh-pages

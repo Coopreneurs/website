@@ -17,7 +17,7 @@ You need to install:
 1. CD into website directory
 
 ```sh
-cd website
+$ cd website
 ```
 2. Install dependencies for website
 
@@ -201,6 +201,21 @@ For more information about the navigation bar, click [here](https://docusaurus.i
 
 For more information about custom pages, click [here](https://docusaurus.io/docs/en/custom-pages).
 
-# Full Documentation
+# Full Documentation of Docusauarus
 
 Full documentation can be found on the [website](https://docusaurus.io/).
+
+# Build and deploy the coopreneurs website
+
+1. Build the website:
+```sh
+# run in the website directory
+$ yarn build
+```
+
+2. push build to the gh-pages branch
+```sh
+# run in the website directory
+$ GIT_USER=<your_github_username> make release
+```
+Replace `<your_github_username>` with your Github yousername.
