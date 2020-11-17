@@ -13,6 +13,7 @@ const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
+
 class HomeSplash extends React.Component {
   render() {
     const {siteConfig} = this.props;
@@ -63,6 +64,7 @@ class Index extends React.Component {
         id={props.id}
         background={props.background}>
         <GridBlock
+          className="smallH2"
           align="center"
           contents={props.children}
           layout={props.layout}
@@ -122,27 +124,33 @@ class Index extends React.Component {
           {
             content: 'Digitalization Manager, Government Scientist by Training, Handyman. Former Startup Tech Lead in IoT and FinTech, Accenture, Deloitte and Economics Researcher',
             title: 'Richard Abendroth',
-            image: "/img/richard.png"
+            image: "/img/richard.png",
+            imageAlign: "top",
           },
           {
             content: 'Tech and Cloud Entrepreneur in IoT, Mathematician and Engineer by Training, Bike Adventurer. Former Finance Researcher, Adventurer, Corporate Investment Banking Deutsche Bank',
             title: 'Sascha Thiergart',
-            image: "/img/sascha.png"
+            image: "/img/sascha.png",
+            imageAlign: "top",
           },
           {
             content: "Shai loves design, ideas and new ways of design thinking. Problem solving and detailed focus are key to building products that customers love.",
             title: 'Shai Schiff',
-            image: "/img/shai.jpg"
+            image: "/img/shai.jpg",
+            imageAlign: "top",
+
           },
           {
             content: "Sven is a software developer, accessibility-evangelist and team leader. Powered by VS Code and earl-grey he solves all/some/one of our problems and builds beautiful simple things.",
             title: 'Sven Bischoff',
-            image: "/img/sven.png"
+            image: "/img/sven.png",
+            imageAlign: "top",
           },
           {
             content: "Tom is a product leader with a passion for collaboration and empowering people. It's good, if it's fun.",
             title: "Tom Packebusch",
-            image: "/img/tom.png"
+            image: "/img/tom.png",
+            imageAlign: "top",
           },
           {
             content: "",

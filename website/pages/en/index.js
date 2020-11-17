@@ -81,6 +81,7 @@ class Index extends React.Component {
         id={props.id}
         background={props.background}>
         <GridBlock
+          className="smallH2"
           align="center"
           contents={props.children}
           layout={props.layout}
