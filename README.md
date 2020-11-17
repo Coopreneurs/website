@@ -7,10 +7,19 @@ This website was created with [Docusaurus](https://docusaurus.io/).
 - [Editing Content](#editing-content)
 - [Adding Content](#adding-content)
 - [Full Documentation](#full-documentation)
+# Requirements
+You need to install:
+* node >= 10.9
+* yarn >= 1.5
+
 
 # Get Started in 5 Minutes
+1. CD into website directory
 
-1. Make sure all the dependencies for the website are installed:
+```sh
+cd website
+```
+2. Install dependencies for website
 
 ```sh
 # Install dependencies
@@ -26,18 +35,17 @@ $ yarn start
 
 ## Directory Structure
 
-Your project file structure should look something like this
+Your project file structure looks something like this
 
 ```
-my-docusaurus/
+website/
   docs/
-    doc-1.md
-    doc-2.md
-    doc-3.md
+    manifest.md
+    ...
   website/
     blog/
-      2016-3-11-oldest-post.md
-      2017-10-24-newest-post.md
+      2020-07-16-post-growth.md
+      ...
     core/
     node_modules/
     pages/
