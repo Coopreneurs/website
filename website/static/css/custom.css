@@ -15,11 +15,17 @@ button, a.button {
   color: #1D1D1D!important;
 }
 
+
+
 .nav-footer {
   background-color: #FFF!important;
 }
 .imageAlignTop .blockImage{
   max-width:200px!important;
+}
+
+.productShowcaseSection img {
+  border-radius: 50%!important;
 }
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
   input {
