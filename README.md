@@ -207,13 +207,9 @@ Full documentation can be found on the [website](https://docusaurus.io/).
 
 # Build and deploy the coopreneurs website
 
-1. Build the website:
-```sh
-# run in the website directory
-$ yarn build
-```
+1. Merge your changes with master on remote.
 
-2. push build to the gh-pages branch
+2. build and push the build to the gh-pages branch
 ```sh
 # run in the website directory
 $ GIT_USER=<your_github_username> make release
