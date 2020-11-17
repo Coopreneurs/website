@@ -130,7 +130,7 @@ class Index extends React.Component {
           {
             content: 'Tech and Cloud Entrepreneur in IoT, Mathematician and Engineer by Training, Bike Adventurer. Former Finance Researcher, Adventurer, Corporate Investment Banking Deutsche Bank',
             title: 'Sascha Thiergart',
-            image: "/img/sascha.png",
+            image: "/img/sascha.jpg",
             imageAlign: "top",
           },
           {
