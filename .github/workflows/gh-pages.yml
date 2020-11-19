@@ -2,9 +2,6 @@ name: Publish Website
 on:
   push:
     branches: [ master ]
-defaults:
-  run:
-    working-directory: ./website
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,8 +12,10 @@ jobs:
       with:
         node-version: '12.x'
     - name: Install dependencies (from lockfile)
+      working-directory: ./website
       run: yarn install --frozen-lockfile
     - name: Build
+      working-directory: ./website
       run: yarn build 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
