@@ -2,6 +2,9 @@ name: Publish Website
 on:
   push:
     branches: [ master ]
+defaults:
+  run:
+    working-directory: ./website
 jobs:
   build:
     runs-on: ubuntu-latest
