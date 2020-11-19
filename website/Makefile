@@ -7,5 +7,6 @@ start-development: ## start dev server
 build: ## build static files
 	yarn build
 
-release: ## release to github pages
-	USE_SSH=true ORGANIZATION_NAME=Coopreneurs CURRENT_BRANCH=master yarn publish-gh-pages
+# Do not use this anymore, as this project is deployed via Github Actions
+#release: ## release to github pages
+#	USE_SSH=true ORGANIZATION_NAME=Coopreneurs CURRENT_BRANCH=main yarn publish-gh-pages

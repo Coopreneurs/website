@@ -207,7 +207,7 @@ Full documentation can be found on the [website](https://docusaurus.io/).
 
 # Build and deploy the coopreneurs website
 
-1. Merge your changes with master on remote.
+1. Merge your changes with main on remote.
 
 2. build and push the build to the gh-pages branch
 ```sh
