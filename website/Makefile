@@ -2,10 +2,10 @@ help:           ## Show this help.
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
 
 start-development: ## start dev server
-	npm start
+	yarn start
 
 build: ## build static files
-	npm build
+	yarn build
 
 release: ## release to github pages
-	USE_SSH=true ORGANIZATION_NAME=Coopreneurs CURRENT_BRANCH=master npm run publish-gh-pages
+	USE_SSH=true ORGANIZATION_NAME=Coopreneurs CURRENT_BRANCH=master yarn publish-gh-pages
