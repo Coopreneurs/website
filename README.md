@@ -204,14 +204,3 @@ For more information about custom pages, click [here](https://docusaurus.io/docs
 # Full Documentation of Docusauarus
 
 Full documentation can be found on the [website](https://docusaurus.io/).
-
-# Build and deploy the coopreneurs website
-
-1. Merge your changes with main on remote.
-
-2. build and push the build to the gh-pages branch
-```sh
-# run in the website directory
-$ GIT_USER=<your_github_username> make release
-```
-Replace `<your_github_username>` with your Github yousername.
