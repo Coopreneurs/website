@@ -200,7 +200,7 @@ class Index extends React.Component {
             title: 'Organization by Self Management',
           },
           {
-            content: "Together, the members validate business ideas. If an idea profs feasible a venture is founded.",
+            content: "Together, the members validate business ideas. If an idea proofs feasible a venture is founded.",
             title: 'Ventures are owned by the cooperative',
           },
           {
