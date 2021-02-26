@@ -75,6 +75,7 @@ const siteConfig = {
               src: "https://coopreneurs.agilecrm.com/stats/min/agile-min.js",
               async: true,
             },
+            'https://www.google.com/recaptcha/api.js',
           ],
 
   // On page navigation for the current documentation page.

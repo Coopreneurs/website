@@ -45,7 +45,12 @@ class Contact extends React.Component {
 								<p id="meetupError" style={{ display: "none" }}>
 									There was an issue registering. Please try again later.
 								</p>
-								<button className="button" id="contactSubmit">
+								<button  
+        							datasitekey="6Lfm6mgaAAAAANGDUzp6x7WPUJg-vTamyw7PDxvI" 
+									datacallback='onSubmit' 
+									dataaction='submit'
+									className="button g-recaptcha" 
+									id="contactSubmit">
 									Register
 								</button>
 							</form>
@@ -55,6 +60,9 @@ class Contact extends React.Component {
 				<script
 					dangerouslySetInnerHTML={{
 						__html: `
+			function onSubmit(token) {
+				document.getElementById("contactForm").submit();
+				}
             function submitMeetupForm(event) {
 							event.preventDefault();
 							event.stopPropagation();
