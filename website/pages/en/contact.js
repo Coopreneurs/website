@@ -46,9 +46,9 @@ class Contact extends React.Component {
 									There was an issue registering. Please try again later.
 								</p>
 								<button  
-        							datasitekey="6Lfm6mgaAAAAANGDUzp6x7WPUJg-vTamyw7PDxvI" 
-									datacallback='onSubmit' 
-									dataaction='submit'
+        							data-sitekey="6Lfm6mgaAAAAANGDUzp6x7WPUJg-vTamyw7PDxvI" 
+									data-callback='onSubmit' 
+									data-action='submit'
 									className="button g-recaptcha" 
 									id="contactSubmit">
 									Register
