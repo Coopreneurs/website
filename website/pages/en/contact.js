@@ -15,6 +15,7 @@ class Contact extends React.Component {
 	render() {
 		const {siteConfig} = this.props;
 		const pageUrl = (page) =>
+			this.props.config.url + 
 			this.props.config.baseUrl +
 			page;
 		const successURL = pageUrl("success.html");
@@ -30,65 +31,22 @@ class Contact extends React.Component {
 								open for everyone no matter the background.
 							</p>
 							<form
-								id="contactForm"
+								action="https://formspree.io/f/xzbkldeq"
+								method="POST"
 							>
 								<label>
 									Your Email:
-									<input
-										className="input"
-										id="emailInput"
-										type="email"
-										name="email"
-										required="required"
-									/>
+									<input type="text" name="_replyto" />
 								</label>
+								<input type="hidden" name="_next" value={successURL} />
 								<p id="meetupError" style={{ display: "none" }}>
 									There was an issue registering. Please try again later.
 								</p>
-								<button  
-        							data-sitekey="6Lfm6mgaAAAAANGDUzp6x7WPUJg-vTamyw7PDxvI" 
-									data-callback='onSubmit' 
-									data-action='submit'
-									className="button g-recaptcha" 
-									id="contactSubmit">
-									Register
-								</button>
+								<button className="button" type="submit">Register</button>
 							</form>
 						</div>
 					</div>
 				</Container>
-				<script
-					dangerouslySetInnerHTML={{
-						__html: `
-			function onSubmit(token) {
-				document.getElementById("contactForm").submit();
-				}
-            function submitMeetupForm(event) {
-							event.preventDefault();
-							event.stopPropagation();
-							var isFormValid = document.querySelector("#contactForm").checkValidity();
-							if(!isFormValid){
-								// showng the user that the email is not correct
-								document.querySelector("#contactForm").reportValidity();
-								return;
-							}
-							console.log('------------event------------', event)
-              var contact = {};
-              contact.email = document.querySelector('#emailInput').value;
-              _agile.create_contact(contact, {
-                  success: function (data) {
-                      window.location.href = "${successURL}";
-                  },
-                  error: function (data) {
-                      document.querySelector("#meetupError").style.display = 'block'
-                  }
-              });
-						}
-						document.querySelector("#contactForm").addEventListener('submit',submitMeetupForm)
-						document.querySelector("#contactSubmit").addEventListener('click',submitMeetupForm)
-						`,
-					}}
-				/>
 			</div>
 		);
 	}
